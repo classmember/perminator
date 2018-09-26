@@ -6,4 +6,6 @@ go:
  - "1.11.x"
  - "master"
 
-script: "go test"
+script:
+ - "go test"
+ - "cd test/integration && ./test_file_permissions.sh"
